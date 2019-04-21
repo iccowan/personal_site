@@ -10741,3 +10741,23 @@ a.navbar-item:hover {
   text-decoration: none;
 }
 
+iframe {
+  max-width: 100%;
+  width: 100%;
+}
+
+.aspect-ratio {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding-bottom: 57%;
+}
+
+.aspect-ratio iframe {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+}
+

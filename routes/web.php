@@ -13,4 +13,9 @@
 
 // Home
 Route::get('/', 'FrontController@showHome');
+
+// Github
 Route::get('/github', 'FrontController@showGithub');
+
+// Youtube
+Route::get('/youtube', 'FrontController@showYouTube');

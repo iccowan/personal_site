@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\GithubRepo;
+use Facades\App\Repository\GithubRepoCache;
 use Illuminate\Http\Request;
 
 class FrontController extends Controller
@@ -15,7 +15,12 @@ class FrontController extends Controller
     // Show GitHub Repos
     public function showGithub() {
         // Get all of the repos for the page
-        $all_repos = GithubRepo::orderBy("commits", "DESC")->paginate(20);
+        $all_repos = GithubRepoCache::getByKey('REPOS');
         return view("github")->with('all_repos', $all_repos);
+    }
+
+    // Show YouTube
+    public function showYouTube() {
+        return view("youtube");
     }
 }

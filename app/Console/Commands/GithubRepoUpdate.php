@@ -3,6 +3,7 @@
 namespace App\Console\Commands;
 
 use App\GithubRepo;
+use Facades\App\Repository\GithubRepoCache;
 use Carbon\Carbon;
 use Config;
 use DB;
@@ -93,6 +94,8 @@ class GithubRepoUpdate extends Command
                 $repo->save();
             }
         }
-        //dd(json_decode($res->getBody()));
+
+        // Cache the results
+        GithubRepoCache::cache();
     }
 }
