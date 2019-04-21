@@ -14,6 +14,7 @@ return [
     */
 
     'name' => env('APP_NAME', 'Laravel'),
+    'github_secret' => env('GITHUB_PRIVATE'),
 
     /*
     |--------------------------------------------------------------------------

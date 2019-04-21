@@ -11,6 +11,6 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Home
+Route::get('/', 'FrontController@showHome');
+Route::get('/github', 'FrontController@showGithub');
