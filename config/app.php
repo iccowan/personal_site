@@ -15,6 +15,8 @@ return [
 
     'name' => env('APP_NAME', 'Laravel'),
     'github_secret' => env('GITHUB_PRIVATE'),
+    'youtube_channelId' => env('YOUTUBE_CHANNEL_ID'),
+    'youtube_api' => env('YOUTUBE_API_KEY'),
 
     /*
     |--------------------------------------------------------------------------

@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use Facades\App\Repository\YoutubeCache;
 use Facades\App\Repository\GithubRepoCache;
 use Illuminate\Http\Request;
 
@@ -21,6 +22,8 @@ class FrontController extends Controller
 
     // Show YouTube
     public function showYouTube() {
-        return view("youtube");
+        // Get the Youtube videos
+        $videos = YoutubeCache::getByKey('VIDEOS');
+        return view("youtube")->with('videos', $videos);
     }
 }

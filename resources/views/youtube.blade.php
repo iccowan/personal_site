@@ -13,20 +13,27 @@
                 </center>
             </div>
         </div>
-        <div class="content-block">
-            <div class="gray">
-                <div class="row">
-                    <div class="col-sm-6">
-                        <div class="aspect-ratio">
-                            <iframe width="560" height="360" src="https://www.youtube.com/embed/txkNwm0S-yk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        @foreach($videos as $v)
+            <div class="content-block">
+                <div class="gray">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="aspect-ratio">
+                                <iframe width="560" height="360" src="https://www.youtube.com/embed/{{ $v->video_id }}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <h3>{{ $v->title }}</h3>
+                            <i><p>{{ $v->upload_date }}</p></i>
+                            <p>{{ $v->desc }}</p>
                         </div>
                     </div>
-                    <div class="col-sm-6">
-                        <h3>Flight Vlog - First Flight as an INSTRUMENT PILOT to AGS!!</h3>
-                        <i><p>17 Views - Apr 20, 2019</p></i>
-                        <p>Thank you for watching! This is my first video as an instrument rated private pilot filmed back in December, 2018. My private pilot certificate and my instrument rating have been a long work in progress and I’m excited to say they’re complete! Now onto commercial! I hope you enjoyed! Please make sure to like and subscribe! Music: Your Eyes, by Joey Pecoraro (http://bit.ly/2VYbBkX) Disclaimer: This video is not to be used as a substitute for proper ground/flight training.</p>
-                    </div>
                 </div>
+            </div>
+        @endforeach
+        <div class="content-block">
+            <div class="blue">
+                <center><a href="https://www.youtube.com/channel/UCfEj4FfmymrdtcENSrRbdhw" target="_blank"><h3>Check Out More of my Videos!</h3></a></center>
             </div>
         </div>
     </div>
