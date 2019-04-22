@@ -24,7 +24,7 @@
                         </div>
                         <div class="col-sm-6">
                             <h3>{{ $v->title }}</h3>
-                            <i><p>{{ $v->upload_date }}</p></i>
+                            <i><p>{{ number_format($v->views) }} Views - {{ $v->upload_date }}</p></i>
                             <p>{{ $v->desc }}</p>
                         </div>
                     </div>

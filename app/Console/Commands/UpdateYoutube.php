@@ -69,6 +69,14 @@ class UpdateYoutube extends Command
                 $vid->upload_date = $upload_date;
                 $vid->desc = explode("\n", $u->snippet->description)[0];
                 $vid->video_id = $u->snippet->resourceId->videoId;
+
+                // Get the views for the video
+                $result = $client->request("GET", "https://www.googleapis.com/youtube/v3/videos?part=statistics&id=" . $u->snippet->resourceId->videoId . "&key=" . Config::get('app.youtube_api'));
+                $stats = json_decode($result->getBody());
+                $views = $stats->items[0]->statistics->viewCount;
+                $vid->views = $views;
+
+                // Save
                 $vid->save();
             }
         }
