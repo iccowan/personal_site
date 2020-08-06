@@ -13,8 +13,8 @@
                     <a target="_blank" href="https://www.github.com/iccowan"><i class="fab fa-github"></i></a> | <a href="mailto:ian@cowanemail.com"><i class="far fa-envelope"></i></a> | <a target="_blank" href="https://www.youtube.com/channel/UCfEj4FfmymrdtcENSrRbdhw"><i class="fab fa-youtube"></i></a>
                     <br />
                     <i>
-                        <h5>Instrument Rated Private Pilot;</h5>
-                        <h5>Advanced/Instrument Ground Instructor;</h5>
+                        <h5>Commercial Pilot ASEL/IR;</h5>
+                        <h5>CFI-I, AGI, IGI;</h5>
                         <h5>Student at Centre College (Mathematics/Computer Science);</h5>
                         <h5>Hobby Programmer</h5>
                     </i>
