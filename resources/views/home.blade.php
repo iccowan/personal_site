@@ -9,7 +9,7 @@
         <div class="content-block">
             <div class="gray">
                 <div class="float-left">
-                    <img src="/photos/profilePicSmall.jpg" />
+                    <img class="profile-pic" src="/photos/profilePicSmall.jpg" />
                 </div>
                 <div class="align-right">
                     <h2>Ian Cowan</h2>
