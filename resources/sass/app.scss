@@ -104,3 +104,29 @@ iframe {
   height: 100%;
   left: 0; top: 0;
 }
+
+.align-right {
+    text-align: right;
+}
+
+.float-left {
+    float: left;
+}
+
+.float-right {
+    float: right;
+}
+
+.float-clear {
+    clear: all;
+}
+
+.profile-pic {
+    height: 175px;
+    border-radius: 10px;
+    border-bottom: 10px;
+}
+
+hr.grey {
+    background-color: lightgrey;
+}
