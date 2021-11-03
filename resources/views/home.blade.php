@@ -8,7 +8,10 @@
     <div class="container">
         <div class="content-block">
             <div class="gray">
-                <center>
+                <div class="float-left">
+                    <img src="/photos/profilePicSmall.jpg" />
+                </div>
+                <div class="align-right">
                     <h2>Ian Cowan</h2>
                     <a target="_blank" href="https://www.github.com/iccowan"><i class="fab fa-github"></i></a> | <a href="mailto:ian@cowanemail.com"><i class="far fa-envelope"></i></a> | <a target="_blank" href="https://www.youtube.com/channel/UCfEj4FfmymrdtcENSrRbdhw"><i class="fab fa-youtube"></i></a>
                     <br />
@@ -18,7 +21,8 @@
                         <h5>Student at Centre College (Mathematics/Computer Science);</h5>
                         <h5>Software Engineer</h5>
                     </i>
-                </center>
+                </div>
+                <div class="float-clear"></div>
             </div>
         </div>
         <div class="content-block">
