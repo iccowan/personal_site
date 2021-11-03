@@ -10767,3 +10767,7 @@ iframe {
   border-bottom: 10px;
 }
 
+hr.grey {
+  background-color: lightgrey;
+}
+
