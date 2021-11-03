@@ -12,7 +12,7 @@
                     <img class="profile-pic" src="/photos/profilePicSmall.jpg" />
                 </div>
                 <div class="align-right">
-                    <h2>Ian Cowan</h2>
+                    <i><h2>Ian Cowan</h2></i>
                     <a target="_blank" href="https://www.github.com/iccowan"><i class="fab fa-github"></i></a> | <a href="mailto:ian@cowanemail.com"><i class="far fa-envelope"></i></a> | <a target="_blank" href="https://www.youtube.com/channel/UCfEj4FfmymrdtcENSrRbdhw"><i class="fab fa-youtube"></i></a>
                     <br />
                     <i>
